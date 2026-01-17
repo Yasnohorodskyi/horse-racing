@@ -1,0 +1,28 @@
+@use './variables' as *;
+
+@mixin panel-base {
+  border: 2px solid $ink;
+  background: $panel-bg;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+}
+
+@mixin panel-header($uppercase: false) {
+  padding: $panel-header-padding;
+  font-weight: 700;
+  font-size: 14px;
+  border-bottom: 2px solid $ink;
+
+  @if $uppercase {
+    text-transform: uppercase;
+  }
+}
+
+@mixin panel-body($padding: $panel-body-padding) {
+  flex: 1;
+  padding: $padding;
+  min-height: 0;
+  overflow: auto;
+}
