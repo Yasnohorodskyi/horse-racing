@@ -10,6 +10,9 @@ coverage
 *.log
 .vscode
 .idea
+cypress/screenshots
+cypress/videos
+cypress/downloads
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
